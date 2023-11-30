@@ -1,0 +1,29 @@
+# Available placeholder for permission:
+# {environment} - the waystone environment type (NORMAL, NETHER, THE_END)
+# {model} - the waystone model id (in models.yml)
+# {type} - the waystone type name (in waystones.yml)
+Permission: 'fancywaystones.waystones.craft.{model}.{environment}.{type}'
+Result:
+  type: WAYSTONE
+  meta:
+    id: 'server_normal'
+    model: 'regular'
+Auto Give:
+  On Join: false
+  First Join Only: false
+  On Pickup Ingredient: true
+Shape:
+  - "XYX"
+  - "BAB"
+  - "AZA"
+Materials:
+  X:
+    type: SMOOTH_STONE_SLAB
+  Y:
+    type: POLISHED_ANDESITE
+  Z:
+    type: ENDER_CHEST
+  A:
+    type: DIAMOND_BLOCK
+  B:
+    type: BEACON
