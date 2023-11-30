@@ -12,6 +12,6 @@ Recipes are located in the `recipes` folder. They are named after their recipe I
 Waystone models are located in the `waystone_models` folder. 
 They are named after their model ID, e.g. `regular.yml` for the waystone model with ID `regular` . If you want to contribute a waystone model, please create a pull request with your waystone model file.
 
-## Waystone Types
+### Waystone Types
 Waystone types are located in the `waystone_types` folder.
 They are named after their type ID, e.g. `public_nether.yml` for the waystone type with ID `public_nether` . If you want to contribute a waystone type, please create a pull request with your waystone type file.
