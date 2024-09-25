@@ -1,0 +1,136 @@
+name: "Bedrock"
+components:
+  - type: client-textdisplay
+    offset:
+      x: 0.5
+      y: 2.9
+      z: 0.5
+    data:
+      'state:active':
+        display-billboard: CENTER
+        background-color:
+          alpha: 0
+        text: |-
+          {waystone_name}
+          {language.hologram.active}
+          &7&o[{waystone_type}]
+      'state:inactive':
+        display-billboard: CENTER
+        background-color:
+          alpha: 0
+        text: |-
+          {waystone_name}
+          {language.hologram.inactive}
+          &7&o[{waystone_type}]
+  - type: blockdata
+    offset:
+      x: 0
+      y: 0
+      z: 0
+    data:
+      '*':
+        data: 'minecraft:chiseled_stone_bricks'
+  - type: blockdata
+    offset:
+      x: 0
+      y: 1
+      z: 0
+    data:
+      '*':
+        data: 'minecraft:stone_brick_wall'
+  - type: blockdata
+    offset:
+      x: 0
+      y: 2
+      z: 0
+    data:
+      '*':
+        data: 'minecraft:smooth_stone_slab'
+  - type: client-blockdisplay
+    offset:
+      x: 0
+      y: 2
+      z: 0
+    data:
+      '*':
+        block-data: 'minecraft:polished_andesite'
+        translation:
+          x: 0.2
+          y: 0.05
+          z: 0.2
+        scale:
+          x: 0.6
+          y: 0.6
+          z: 0.6
+  - type: client-blockdisplay
+    offset:
+      x: 0
+      y: 2
+      z: 0
+    data:
+      '*':
+        block-data: 'minecraft:polished_andesite'
+        translation:
+          x: 0.3
+          y: 0.4
+          z: 0.3
+        scale:
+          x: 0.4
+          y: 0.4
+          z: 0.4
+  - type: client-blockdisplay
+    offset:
+      x: 0
+      y: 1
+      z: 0
+    data:
+      'state:active waystone_type:server':
+        block-data: 'minecraft:diamond_block'
+        translation:
+          x: 0.15
+          y: 0
+          z: 0.15
+        scale:
+          x: 0.7
+          y: 1
+          z: 0.7
+      'state:active waystone_type:public':
+        block-data: 'minecraft:gold_block'
+        translation:
+          x: 0.15
+          y: 0
+          z: 0.15
+        scale:
+          x: 0.7
+          y: 1
+          z: 0.7
+      'state:active waystone_type:private':
+        block-data: 'minecraft:emerald_block'
+        translation:
+          x: 0.15
+          y: 0
+          z: 0.15
+        scale:
+          x: 0.7
+          y: 1
+          z: 0.7
+      'state:active waystone_type:linked':
+        block-data: 'minecraft:redstone_block'
+        translation:
+          x: 0.15
+          y: 0
+          z: 0.15
+        scale:
+          x: 0.7
+          y: 1
+          z: 0.7
+      'state:inactive waystone_type:server,private,public,linked':
+        block-data: 'minecraft:polished_andesite'
+        translation:
+          x: 0.15
+          y: 0
+          z: 0.15
+        scale:
+          x: 0.7
+          y: 1
+          z: 0.7
